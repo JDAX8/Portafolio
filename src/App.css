@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Light.ttf');
+	font-weight: 300;
+	font-style: light;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Regular.ttf');
+	font-weight: 400;
+	font-style: regular;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Semibold.ttf');
+	font-weight: 600; /* Valor estándar para semibold */
+	font-style: semibold;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Bold.ttf');
+	font-weight: 700; /* Valor estándar para bold */
+	font-style: bold;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Extrabld.ttf');
+	font-weight: 800; /* Valor estándar para extrabold */
+	font-style: extrabold;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url('./assets/fonts/ProximaNova-Black.ttf');
+	font-weight: 900; /* Valor estándar para black */
+	font-style: black;
+}
+
+@theme {
+	/*Titles S1*/
+	--color-titile1: #d000f4;
+	--color-titile2: #79008e;
+	--color-tag: #b001d0;
+	--color-titile3: #f12c89;
+	--color-titile4: #7f5eb7;
+}
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.logo {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+.read-the-docs {
+	color: #888;
+}
+span {
+	background: linear-gradient(90deg, var(--color-titile1) 20%, var(--color-titile2) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+@layer utilities {
+	.text-gradient {
+		background: linear-gradient(90deg, var(--color-titile3) 20%, var(--color-titile4) 50%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+}
+@layer utilities {
+	.bg-gradient-new {
+		background: linear-gradient(90deg, #130428 7%, #251043 34%, #38126d 57%, #261045 85%, #130428 100%);
+	}
+}
+.blur-container {
+	position: relative;
+	border-radius: 10px;
+	padding: 1rem;
+	color: white;
+	overflow: hidden;
+}
+
+.blur-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(-76deg, rgba(105, 59, 147, 1) 0%, rgba(109, 167, 227, 0.37) 63%, rgba(110, 191, 244, 0.22) 77%, rgba(70, 144, 212, 0.05) 100%);
+	backdrop-filter: blur(10px);
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.blur-container > * {
+	position: relative;
+	z-index: 1;
+}
