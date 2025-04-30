@@ -14,7 +14,7 @@ import TS from '/photos/TS.png'
 const Skills = () => {
 	return (
 		<section id='skills' className='flex flex-col justify-center items-center mt-10 md:py-12'>
-			<h1 className='font-ProximaNova font-bold text-gradient mb-7 gap-10'>Habilidades</h1>
+			<h1 className='font-ProximaNova font-bold text-gradient mb-7 gap-10 w-full md:text-left md:pl-8'>Habilidades</h1>
 			<section className='flex flex-row justify-center p-5'>
 				<div className='ms:w-full md:w-3/4 flex flex-wrap gap-3 pt-2 items-center justify-center'>
 					<ProgramsImages programImg={Ai} />
