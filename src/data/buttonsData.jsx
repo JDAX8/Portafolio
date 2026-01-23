@@ -1,4 +1,4 @@
-import CV from '/docs/CV.pdf'
+import CV from '/docs/CV2.pdf'
 
 const buttonsData = [
 	{

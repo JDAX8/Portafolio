@@ -2,7 +2,7 @@ const ProjectsVideos = () => {
 	const videos = [
 		{ id: 1, url: 'https://www.youtube.com/embed/Iei-9D8mj3E', title: 'Video 1' },
 		{ id: 2, url: 'https://www.youtube.com/embed/KyVFk05XS7o', title: 'Video 2' },
-		{ id: 3, url: 'https://www.youtube.com/embed/94nx-pjGUpw', title: 'Video 3' }
+		{ id: 3, url: 'https://www.youtube.com/embed/JuveH0A4Fzs', title: 'Video 3' }
 	]
 
 	 return (
