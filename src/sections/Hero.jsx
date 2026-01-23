@@ -1,6 +1,5 @@
 import TagsButtons from '../components/Tags'
 import buttonsData from '../data/buttonsData'
-import CV from '/docs/CV.pdf'
 import photo from '/photos/profile.png'
 
 const Hero = () => {

@@ -1,4 +1,7 @@
-import CV from '/docs/CV2.pdf'
+// import CV from '/docs/CV.pdf'
+
+import resume from '/docs/CV2.pdf'
+
 
 const buttonsData = [
 	{
@@ -54,7 +57,7 @@ const buttonsData = [
 		),
 	},
 	{
-		link: CV,
+		link: resume,
 		name: 'Curriculum vitae',
 		target: '_blank',
 		svg: (
